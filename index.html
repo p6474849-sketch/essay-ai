@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Document Checker — Fix & Guide (Level 2)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="top">
+      <h1 id="headerTitle">Document Checker — Fix Guide</h1>
+      <p id="headerDesc">Эссэ, CV, Захидал — хэрэв алдаа гарвал яаж засах энгийн заавар</p>
+
+      <div class="top-controls">
+        <select id="lang" aria-label="Language">
+          <option value="en">English</option>
+          <option value="mn">Монгол</option>
+          <option value="zh">中文</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="ar">العربية</option>
+          <option value="ru">Русский</option>
+          <option value="de">Deutsch</option>
+          <option value="ja">日本語</option>
+          <option value="pt">Português</option>
+          <option value="ko">한국어</option>
+        </select>
+
+        <select id="docType" aria-label="Document type">
+          <option value="essay">Essay</option>
+          <option value="cv">CV</option>
+          <option value="letter">Letter</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <div class="left">
+        <textarea id="text" placeholder="Энд текстээ бичнэ үү..." aria-label="Text input"></textarea>
+
+        <p id="note" class="note">
+          ⚠ This tool does <strong>NOT</strong> fix spelling/grammar — only structure & content guidance.
+        </p>
+
+        <div class="buttons">
+          <button id="checkBtn" class="primary">Check</button>
+          <button id="clearBtn" class="ghost">Clear</button>
+        </div>
+
+        <div id="result" class="result" aria-live="polite"></div>
+      </div>
+
+      <aside class="right">
+        <div id="fixBox" class="help">
+          <!-- Fix steps and definitions injected here -->
+        </div>
+
+        <div id="rubric" class="example"></div>
+      </aside>
+    </main>
+
+    <footer>
+      <p id="footerText">Rule-based checker — it suggests fixes but does not replace a teacher.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
